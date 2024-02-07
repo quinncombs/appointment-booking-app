@@ -20,7 +20,7 @@ db.once('open', async () => {
     {
       name: 'Mens Cut',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+        'Classic Mens Cut',
       image: 'cookie-tin.jpg',
       category: categories[0]._id,
       price: 30.99,
@@ -29,7 +29,7 @@ db.once('open', async () => {
     {
       name: 'Womens Cut',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+        'Woomens Trim',
       image: 'canned-coffee.jpg',
       category: categories[0]._id,
       price: 50.99,
@@ -39,7 +39,7 @@ db.once('open', async () => {
       name: 'Color',
       category: categories[1]._id,
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+        'Whatever color you want',
       image: 'toilet-paper.jpg',
       price: 70.99,
       quantity: 20
@@ -48,7 +48,7 @@ db.once('open', async () => {
       name: 'Style',
       category: categories[1]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
+        'Whatever style you want',
       image: 'soap.jpg',
       price: 40.99,
       quantity: 50
