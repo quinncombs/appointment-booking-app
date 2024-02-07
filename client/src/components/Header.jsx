@@ -1,4 +1,10 @@
 import { useAccountContext } from '../utils/GlobalState';
+import Services from './ServicePage';
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+} from "react-router-dom";
 
 const Header = () => {
   const [state] = useAccountContext();
@@ -10,13 +16,14 @@ const Header = () => {
         :
         <h1>Welcome! Please log in!</h1>
       }
-      <nav>
-        <ul>
-          <li><a href='#'>Home</a></li>
-          <li><a href='#'>Services</a></li>
-          <li><a href='#'>Booking</a></li>
-        </ul>
-      </nav>
+      <Router>
+        <nav>
+          <Routes>
+            <Route exact path="/" element={<App />} />
+            <Route path="/services" element={<Services />} />
+          </Routes>
+        </nav>
+      </Router>
     </header>
   )
 }

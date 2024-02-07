@@ -43,7 +43,7 @@ export default function AccountDisplay() {
           ) : (
             <button onClick={toggleUpdateName}>Update userName</button>
           )}
-          <span>You are currently signed in ✅</span>
+          <span>You are currently signed in </span>
         </>
       )}
       <button
