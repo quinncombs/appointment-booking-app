@@ -10,6 +10,13 @@ const Header = () => {
         :
         <h1>Welcome! Please log in!</h1>
       }
+      <nav>
+        <ul>
+          <li><a href='#'>Home</a></li>
+          <li><a href='#'>Services</a></li>
+          <li><a href='#'>Booking</a></li>
+        </ul>
+      </nav>
     </header>
   )
 }
