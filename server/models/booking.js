@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
+const { Schema } = mongoose;
 
-const bookingSchema = new Schema({
+const BookingSchema = new Schema({
     event: {
         type: Schema.Types.ObjectId,
         ref: 'Event'
@@ -15,4 +15,8 @@ const bookingSchema = new Schema({
 { timestamps: true }
 );
 
-module.exports = mongoose.model('Booking', bookingSchema);
+// module.exports = mongoose.model('booking', bookingSchema);
+
+const Booking = mongoose.model('Booking', BookingSchema);
+
+module.exports = Booking; 
