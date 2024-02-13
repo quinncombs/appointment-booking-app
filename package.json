@@ -8,11 +8,14 @@
         "build": "vite build",
         "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview",
+        "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
+        "start": "node server/server.js",
         "test": "vitest"
     },
     "dependencies": {
         "@apollo/server": "^4.7.1",
         "@testing-library/react": "^14.0.0",
+        "concurrently": "^8.2.2",
         "dom": "^0.0.3",
         "express": "^4.17.2",
         "graphql": "^16.6.0",
