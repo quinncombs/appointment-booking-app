@@ -2,9 +2,9 @@
 const Services = () => {
     return (
         <header className='App-header'>
-            <ul>
-                <li>service names here</li>
-            </ul>
+            <div>Our services are: 
+                <li> </li>
+            </div>
         </header>
     )
 }

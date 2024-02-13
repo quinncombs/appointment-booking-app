@@ -1,5 +1,6 @@
 import { useAccountContext } from '../utils/GlobalState';
 import Services from './ServicePage';
+import '../App.css'
 import {
     BrowserRouter as Router,
     Routes,
@@ -14,12 +15,11 @@ const Header = () => {
       {state.isLoggedIn ? 
         <h1 classNAme="App-header">Welcome {state.userName}!</h1>
         :
-        <h1>Welcome! Please log in!</h1>
+        <h1>Welcome to React Salon!</h1>
       }
       <Router>
         <nav>
           <Routes>
-            {/* <Route path="/" element={<App />} /> */}
             <Route path="/" element={<Services />} />
           </Routes>
         </nav>
