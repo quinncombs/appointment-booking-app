@@ -6,7 +6,7 @@ const typeDefs = `
 
   type Booking {
     _id: ID!
-    event: Event!
+    product: Product!
     user: User!
     createdAt: String!
     updatedAt: String!
