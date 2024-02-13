@@ -8,6 +8,7 @@ function App() {
     <AccountProvider>
       <div className="App">
         <Header />
+        hello
         <AccountDisplay />
       </div>
     </AccountProvider>

@@ -19,8 +19,8 @@ const Header = () => {
       <Router>
         <nav>
           <Routes>
-            <Route exact path="/" element={<App />} />
-            <Route path="/services" element={<Services />} />
+            {/* <Route path="/" element={<App />} /> */}
+            <Route path="/" element={<Services />} />
           </Routes>
         </nav>
       </Router>
